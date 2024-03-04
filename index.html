@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>QUIZ</title>
+        <link rel="stylesheet" href="index.js_quiz">
+    </head>
+    <body>
+        
+
+       Q1. WHAT IS 100/4?<br>
+       <input type="radio" name="question1" id="correct1">25<br>
+       <input type="radio" name="question1"> 50<br>
+       <input type="radio" name="question1">20<br>
+
+       
+       Q2. WHAT IS 9*9<br>
+       <input type="radio" name="question2">18<br>
+       <input type="radio" name="question2" id="correct2"> 81<br>
+       <input type="radio" name="question2">9<br>
+
+       
+       Q3. WHAT IS 3+9<br>
+       <input type="radio" name="question3">11<br>
+       <input type="radio" name="question3"> 14<br>
+       <input type="radio" name="question3"  id="correct3">12<br>
+                  
+                
+       <input type="submit" name="submit" value="submitQuiz" onclick="
+             result()">
+
+ 
+        <script type="text/javascript">
+            function result(){
+                //body...
+                var score=0;
+                 if(document.getElementById('correct1').checked)
+                  {
+                    score++;
+                  }
+                  if(document.getElementById('correct2').checked)
+                  {
+                    score++;
+                  }
+                  if(document.getElementById('correct3').checked)
+                  {
+                     score++;
+                  }
+
+                  document.write("your is:"+score);
+
+                 
+                
+                  }
+            
+
+        </script>
+
+
+
+    
+
+    </body>
+</html>
